@@ -42,4 +42,36 @@ p { margin: .75rem 0;}
     padding: 0 2rem;
 }
 
+img {width: 100%;}
+
 .text-center {text-align: center;}
+ul {list-style: none;}
+/*************************************NAVBAR**************************************/
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    align-items: center;
+}
+.logo {
+    max-height: 45px;
+}
+.logo img{
+    max-height: 45px;
+}
+.navbar ul{
+    display: flex;
+}
+.navbar ul li a{
+    display: inline-block;
+    padding: .75rem;
+    color: #fff;
+    border-radius: 5px;
+    transition: all .3s;
+    margin-right: .3rem;
+}
+
+.navbar ul li a:hover{
+    background-color: var(--primary-color);
+}
