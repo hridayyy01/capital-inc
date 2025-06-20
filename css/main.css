@@ -21,6 +21,9 @@ body {
 }
 
 p { margin: .75rem 0;}
+ul {list-style: none;}
+
+/*********************************UTILITIES**************************************/
 
 .text-primary {color : var(--primary-color)}
 .bg-primary {
@@ -45,7 +48,30 @@ p { margin: .75rem 0;}
 img {width: 100%;}
 
 .text-center {text-align: center;}
-ul {list-style: none;}
+
+.l-heading {font-size: 4rem}
+.m-heading {font-size: 3.2rem}
+.s-heading {font-size: 2.2rem}
+.lead {font-size: 1.3rem}
+
+/*************************************BUTTONS**************************************/
+.btn {
+    display: inline-block;
+    padding: .5rem .7rem;
+    color: #fff;
+    border-radius: 8px;
+    transition: all .5s;
+}
+.btn.btn-primary {
+    background-color: var(--primary-color);
+}
+.btn.btn-dark {
+    background-color: var(--dark-color);
+}
+.btn:hover {
+    background-color: rgb(145, 63, 48);
+}
+
 /*************************************NAVBAR**************************************/
 
 .navbar {
@@ -74,4 +100,21 @@ ul {list-style: none;}
 
 .navbar ul li a:hover{
     background-color: var(--primary-color);
+}
+
+/***********************************SHOW CASE********************************************/
+.showcase {
+    background: var(--dark-color) url('../images/showcase.jpg') no-repeat center center;
+    background-size: cover;
+    color: #fff;
+    min-height: calc(100vh - 78px);
+    display: flex;
+}
+.showcase-content {
+    /* height: 100%; */
+    background-color: rgba(0, 0, 0, 0.4);
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
