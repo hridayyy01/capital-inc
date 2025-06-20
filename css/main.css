@@ -75,6 +75,15 @@ img {width: 100%;}
 .btn:hover {
     background-color: rgb(145, 63, 48);
 }
+.btn:focus-visible,
+.btn:focus {
+    outline: none;
+}
+
+.btn:focus,
+.btn:hover {
+    background-color: rgb(145, 63, 48);
+}
 
 /*************************************NAVBAR**************************************/
 
@@ -145,7 +154,7 @@ img {width: 100%;}
     cursor: pointer;
 }
 
-#what .item i.fa{
+#what .item i.fa {
     height: 60px;
     width: 60px;
     border-radius: 50%;
@@ -164,4 +173,28 @@ img {width: 100%;}
 #what .item h4 {
     margin: .75rem 0;
     font-size: 1.2rem;
+}
+
+
+.who-bg {
+    background: url('../images/people.jpg') no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+.who-bg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.who-content {
+    padding: 1.5rem;
+}
+.list li {
+    padding: .75rem 0;
+    border-bottom: dotted 2px #444;
 }
