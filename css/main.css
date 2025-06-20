@@ -36,7 +36,7 @@ ul {list-style: none;}
 }
 .bg-light {
     background-color: var(--light-color);
-    color: var(--light-color);
+    color: var(--dark-color);
 }
 
 .container {
@@ -49,10 +49,14 @@ img {width: 100%;}
 
 .text-center {text-align: center;}
 
-.l-heading {font-size: 4rem}
-.m-heading {font-size: 3.2rem}
-.s-heading {font-size: 2.2rem}
-.lead {font-size: 1.3rem}
+.l-heading {font-size: 4rem;}
+.m-heading {
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+}
+.s-heading {font-size: 1.6rem;}
+.lead {font-size: 1.3rem;}
+.py-2 {padding: 2rem 0;}
 
 /*************************************BUTTONS**************************************/
 .btn {
@@ -83,13 +87,13 @@ img {width: 100%;}
 .logo {
     max-height: 45px;
 }
-.logo img{
+.logo img {
     max-height: 45px;
 }
-.navbar ul{
+.navbar ul {
     display: flex;
 }
-.navbar ul li a{
+.navbar ul li a {
     display: inline-block;
     padding: .75rem;
     color: #fff;
@@ -97,17 +101,18 @@ img {width: 100%;}
     transition: all .3s;
     margin-right: .3rem;
 }
-
-.navbar ul li a:hover{
+.navbar ul li a:hover {
     background-color: var(--primary-color);
 }
 
-/***********************************SHOW CASE********************************************/
+/*************************************SHOW CASE********************************************/
+
 .showcase {
     background: var(--dark-color) url('../images/showcase.jpg') no-repeat center center;
     background-size: cover;
     color: #fff;
-    min-height: calc(100vh - 78px);
+    min-height: calc(100vh - 78px); /*idhar content confirm hai toh hi dalna min-height
+                                        - ke badd or pehle space dena*/
     display: flex;
 }
 .showcase-content {
@@ -117,4 +122,46 @@ img {width: 100%;}
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+/************************************SECTION WHAT*******************************************/
+
+.items {
+    display: flex;
+}
+.item {
+    flex: 1;
+}
+#what .item {
+    text-align: center;
+    border-radius: 10px;
+    padding: 2rem 1.5rem;
+    transition: all .5s;
+}
+
+#what .item:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+    cursor: pointer;
+}
+
+#what .item i.fa{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    color: #fff;
+    text-align: center;
+    line-height: 60px;
+    transition: all .5s;
+}
+
+#what .item:hover i.fa {
+    background-color: #fff;
+    color: var(--primary-color);
+}
+
+#what .item h4 {
+    margin: .75rem 0;
+    font-size: 1.2rem;
 }
