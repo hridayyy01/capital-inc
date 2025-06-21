@@ -188,7 +188,6 @@ img {width: 100%;}
     font-size: 1.2rem;
 }
 
-
 .who-bg {
     background: url('../images/people.jpg') no-repeat center center;
     background-size: cover;
@@ -221,3 +220,5 @@ img {width: 100%;}
 .form-label {text-transform: capitalize;}
 .form-control {padding: .4rem;}
 #map {height: 100%;} 
+
+

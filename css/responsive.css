@@ -1,0 +1,24 @@
+.l-heading {font-size: 2.4rem;}
+.navbar {flex-direction: column;}
+
+.showcase-content {
+    padding: 0 2rem;
+    align-items: center;
+}
+.lead {font-size: 1.1rem;}
+
+.items { flex-direction: column;}
+
+#who.items {
+    flex-direction: column-reverse;
+}
+.who-bg {
+    min-height: 300px;
+}
+
+#clients .items {
+    flex-direction: row;
+}
+#map {
+    height: 300px;
+}
